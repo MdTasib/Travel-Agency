@@ -1,0 +1,9 @@
+.loginBtn{
+    background: blue;
+    border-radius: 10px;
+    padding: 8px 20px;
+    color: white;
+}
+.loginBtn:hover {
+    color: wheat;
+}
