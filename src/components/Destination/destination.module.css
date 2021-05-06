@@ -1,0 +1,19 @@
+.destination {
+    padding: 60px 0px !important;
+}
+.destinationSingle {
+    background: white;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.destinationSingle:hover {
+    transition: .5s;
+    background: #a8d8f1;
+}
+.destinationSingle h5 {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
