@@ -13,11 +13,11 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path='/'><Home /></Route>
-        <Route exact path='/home'><Home /></Route>
-        <Route exact path='/destination'><Destination /></Route>
-        <Route exact path='/blog'><Blog /></Route>
-        <Route exact path='/contact'><Contact /></Route>
-        <Route exact path='/login'><Login /></Route>
+        <Route path='/home'><Home /></Route>
+        <Route path='/destination'><Destination /></Route>
+        <Route path='/blog'><Blog /></Route>
+        <Route path='/contact'><Contact /></Route>
+        <Route path='/login'><Login /></Route>
       </Switch>
     </Router>
   );
