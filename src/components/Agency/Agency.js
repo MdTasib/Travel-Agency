@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 const Agency = () => {
     const { name } = useParams();
-    console.log(name);
+    console.log(name);// undefind
     return (
         <div className='row'>
             <div className="col-md-4">
