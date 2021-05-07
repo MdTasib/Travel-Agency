@@ -6,6 +6,7 @@ import style from './login.module.css';
 import GoogleSing from './GoogleSing';
 import FacebookLogin from './FacebookLogin';
 import { UserContext } from '../../App';
+import { useHistory, useLocation } from 'react-router-dom';
 
 
 if (!firebase.apps.length) {
@@ -23,6 +24,10 @@ const From = () => {
     })
 
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
+    const history = useHistory();
+    const location = useLocation();
+    const { from } = location.state || { from: { pathname: "/" } };
 
     // handle form submit
     const handleSubmit = (e) => {
@@ -48,6 +53,7 @@ const From = () => {
                     newUserInfo.success = true;
                     setUser(newUserInfo);
                     setLoggedInUser(newUserInfo);
+                    history.replace(from);
                 })
                 .catch(error => {
                     const newUserInfo = { ...user };

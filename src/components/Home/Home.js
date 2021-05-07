@@ -4,10 +4,11 @@ import Destination from '../Destination/Destination';
 import style from './home.module.css';
 
 const Home = () => {
+
     return (
         <div className={`${style.home} row text-center p-5`}>
             {
-                datas.map((data, index) => <Destination key={index} data={data} />)
+                datas.map((data, index) => <Destination key={index} agency={data} />)
             }
         </div>
     );
